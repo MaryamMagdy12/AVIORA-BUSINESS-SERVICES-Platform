@@ -2,7 +2,7 @@
 
 Full-stack platform for **Aviora Business Services** — remote accounting, finance, HR, advisory, and creative services. Clients book services and appointments; admins manage operations through a dashboard API.
 
-This folder is the **project root**. It contains two separate applications, each with its own Git repository:
+This folder is the **project root**.  It contains two applications managed within a single Git repository:
 
 | Folder | Stack | Purpose |
 |--------|--------|---------|
