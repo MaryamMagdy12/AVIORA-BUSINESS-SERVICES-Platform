@@ -16,11 +16,11 @@ This folder is the **project root**.  It contains two applications managed withi
 ```
 CBS_site/
 ├── README.md          ← this file
-├── Front/             ← frontend monorepo (Git repo)
+├── Front/             ←  frontend monorepo
 │   ├── Client_interface/    Public website & client portal
 │   ├── Admin_interface/     Super-admin dashboard
 │   └── Employee_interface/    Employee portal (scaffold)
-└── Back/              ← Laravel API (Git repo)
+└── Back/              ← Laravel API
     ├── app/
     ├── routes/api.php
     ├── database/
