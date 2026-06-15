@@ -1,0 +1,12 @@
+@import './assets/css/design-system.css';
+@import './assets/css/animations.css';
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-main { flex: 1; }
+
+.page { padding: 40px 0 60px; }

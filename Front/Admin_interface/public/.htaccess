@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Allow direct access to sitemap.xml, robots.txt, and Google verification files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(sitemap\.xml|robots\.txt|google.*\.html)$ - [L]
+
+# Skip rewriting for existing files
+RewriteCond %{REQUEST_FILENAME} !-f
+# Skip rewriting for existing directories
+RewriteCond %{REQUEST_FILENAME} !-d
+# Rewrite everything else to index.html
+RewriteRule . /index.html [L]
+</IfModule>
+

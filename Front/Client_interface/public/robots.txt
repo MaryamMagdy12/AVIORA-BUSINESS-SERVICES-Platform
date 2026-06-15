@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cbsremotly.com/sitemap.xml
+
+# Disallow admin area
+Disallow: /admin/
+
+# Disallow API
+Disallow: /api/
+

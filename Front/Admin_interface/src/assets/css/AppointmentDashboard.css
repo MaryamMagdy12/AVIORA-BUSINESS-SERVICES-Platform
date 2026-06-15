@@ -1,0 +1,123 @@
+.appointment-view {
+	display: flex;
+}
+.appointment-calendar {
+	height: fit-content;
+}
+.appointment-details {
+	height: fit-content;
+}
+.calendar-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+.calendar-toolbar-title {
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.calendar-toolbar .controls {
+	display: flex;
+	gap: 10px;
+}
+.calendar-toolbar select {
+	background: #f1f6f8;
+	border: 1px solid #d8e6ec;
+	border-radius: 12px;
+	padding: 10px 12px;
+	font-weight: 600;
+	color: var(--ink);
+	cursor: pointer;
+	transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.calendar-toolbar select:focus {
+	outline: none;
+	border-color: var(--brand);
+	box-shadow: 0 0 0 3px var(--ring);
+}
+.calendar-weekdays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: var(--muted);
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.weekday {
+	display: grid;
+	place-items: center;
+	padding-bottom: 6px;
+}
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 8px;
+}
+.day {
+	background: #f1f7f9;
+	border: 1px solid #e2ecf0;
+	border-radius: 12px;
+	min-height: 64px;
+	padding: 8px;
+	display: grid;
+	align-content: space-between;
+	transition: transform 160ms, box-shadow 160ms;
+}
+.day:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+.day.empty {
+	background: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+.day.empty .num {
+	display: none;
+}
+.day .num {
+	font-weight: 700;
+	color: var(--muted);
+}
+.chip {
+	justify-self: end;
+	background: var(--brand);
+	color: white;
+	font-size: 10px;
+	padding: 4px 8px;
+	border-radius: 10px;
+}
+
+/* Green styling for available/created appointment slots */
+.day-available {
+	background: #e8f5e9;
+	border-color: #4caf50;
+}
+
+.day-available:hover {
+	box-shadow: 0 10px 18px rgba(76, 175, 80, 0.2);
+}
+
+.day-available .chip {
+	background: #4caf50;
+}
+
+/* Red styling for booked/reserved appointment slots */
+.day-booked {
+	background: #ffebee;
+	border-color: #f44336;
+}
+
+.day-booked:hover {
+	box-shadow: 0 10px 18px rgba(244, 67, 54, 0.2);
+}
+
+.day-booked .chip {
+	background: #f44336;
+}
+
+

@@ -1,0 +1,155 @@
+
+/* Only apply background when payment page is present */
+.app-main:has(.payment-page) {
+    /* background-image: url("../images/wmremove-transformed.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* min-height: 100vh; */
+}
+
+/* Alternative: Use pseudo-element on payment page for better browser support */
+.payment-page {
+    position: relative;
+    /* min-height: 100vh; */
+}
+
+.payment-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/wmremove-transformed.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(3px);
+    z-index: -1;
+    pointer-events: none;
+}
+.payment-page h1{
+    text-align: center;
+   font-size: 60px;
+}
+.payment-layout {
+     display: grid; 
+     grid-template-columns: 1.1fr;
+     justify-items: center;
+      gap: 24px; }
+.order-card { 
+    /* border: 1px solid    var(--border);  */
+    border-radius: 12px;
+     padding: 16px; 
+     /* background: #fff; */
+     height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 56%;
+    font-size: 30px;    
+     }
+.order-card ul {
+     list-style: none; 
+     padding: 0;
+      margin: 0; 
+    }
+.order-card li { 
+    display: grid;
+     grid-template-columns: 24px 1fr auto; 
+     gap: 10px; align-items: center;
+      padding: 8px 0;
+       border-bottom: 1px solid var(--border); 
+    }
+.order-card li.total { 
+    font-weight: 700; 
+}
+.payment-form { 
+    /* border: 1px solid var(--border); */
+     border-radius: 12px;
+      padding: 16px; 
+      margin-top: 40px;
+      /* background: #fff; */
+     }
+.tabs { 
+    display: flex; 
+    gap: 10px;
+     margin-bottom: 12px; 
+    
+}
+.tab { 
+    border: 1px solid var(--border); 
+    background: #eef6f7;
+     color: #0c3d4c; 
+     padding: 8px 12px;
+      border-radius: 8px; 
+      font-size: x-large;
+    }
+.tab.active {
+     background: #0c3d4c; 
+     color: #fff; 
+     border-color: #0c3d4c; 
+    }
+.fields { 
+    display: grid; 
+    gap: 10px;
+     margin: 12px 0;
+     }
+.row { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+ }
+input { 
+    padding: 12px 14px;
+     border: 1px solid var(--border); 
+     border-radius: 10px; 
+    }
+
+    @media screen and (max-width: 426px) {
+
+        .tab{
+            font-size: medium;
+        }
+        .order-card{
+            font-size: 20px;    
+            width: 85%;
+        }
+
+        .payment-page h1{
+            font-size: 35px;
+            margin-left: 15px;
+        }
+
+        .payment-form{
+            font-size: large;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            align-items: center;
+        }
+
+        .row{
+              grid-template-columns:1fr; 
+            }
+
+        .fields{
+            width: 17rem;
+                grid-template-columns:1fr; 
+              }
+        /* .paymentInput{
+            width: 80%;
+        } */
+    }
+
+
+    @media screen and  (max-width: 321px){
+
+        .tabs{
+            flex-direction: column;
+        }
+        
+    }

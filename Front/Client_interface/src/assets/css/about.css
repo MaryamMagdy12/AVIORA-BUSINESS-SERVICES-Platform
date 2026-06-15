@@ -1,0 +1,307 @@
+@import './design-system.css';
+
+.about-page {
+  overflow: hidden;
+}
+
+/* ── Hero ── */
+.about-hero {
+  position: relative;
+  min-height: 580px;
+  padding: 72px 0 148px;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(
+    90deg,
+    rgba(12, 61, 76, 0.88) 0%,
+    rgba(15, 79, 90, 0.62) 36%,
+    rgba(25, 67, 91, 0.18) 58%,
+    transparent 72%
+  ); */
+}
+
+.about-hero__grid {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero__content {
+  max-width: 560px;
+}
+
+.about-hero__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #19435b;
+  margin-bottom: 18px;
+}
+
+.about-hero__label::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--aviora-teal);
+}
+
+.about-hero h1 {
+  font-size: clamp(34px, 4.8vw, 54px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  color:#19435b;
+}
+
+.about-hero h1 .accent {
+  color: #6b8f71;
+}
+
+.about-hero p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.75;
+  color:#19435b;
+  margin: 0 0 14px;
+}
+
+.about-hero p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Mission / Vision / Values ── */
+.about-vmv {
+  position: relative;
+  z-index: 2;
+  margin-top: -72px;
+  padding-bottom: 56px;
+}
+
+.about-vmv__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.vmv-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 26px;
+  box-shadow: 0 14px 36px rgba(25, 67, 91, 0.12);
+  border: 1px solid var(--aviora-border);
+  min-height: 280px;
+}
+
+.vmv-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--aviora-teal);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.vmv-card h3 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--aviora-navy);
+}
+
+.vmv-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--aviora-muted);
+}
+
+.vmv-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.vmv-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--aviora-muted);
+}
+
+.vmv-card__check {
+  color: var(--aviora-teal);
+  font-size: 12px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* ── Why Choose Aviora ── */
+.about-why {
+  padding: 72px 0 88px;
+  background: var(--aviora-gray-bg);
+}
+
+.about-why__header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.about-why__title {
+  margin: 0 0 16px;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--aviora-navy);
+}
+
+.about-why__title .accent {
+  color: var(--aviora-teal);
+}
+
+.about-why__intro {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--aviora-muted);
+}
+
+.about-why__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.benefit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid var(--aviora-border);
+  border-radius: 16px;
+  padding: 26px 24px;
+  box-shadow: 0 6px 20px rgba(25, 67, 91, 0.06);
+}
+
+.benefit-card__icon {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--aviora-navy-dark);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+.benefit-card__body {
+  min-width: 0;
+}
+
+.benefit-card h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--aviora-navy);
+}
+
+.benefit-card__body > p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--aviora-muted);
+}
+
+.benefit-card ul {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.benefit-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--aviora-muted);
+}
+
+.benefit-card__check {
+  color: var(--aviora-teal);
+  font-size: 11px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.benefit-card__footer {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--aviora-navy) !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .about-vmv__grid,
+  .about-why__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    min-height: auto;
+    padding-bottom: 120px;
+    background-position: center;
+  }
+
+  .about-hero::before {
+    background: linear-gradient(
+      180deg,
+      rgba(12, 61, 76, 0.92) 0%,
+      rgba(15, 79, 90, 0.82) 100%
+    );
+  }
+
+  .about-hero__content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-vmv {
+    margin-top: -48px;
+  }
+
+  .vmv-card {
+    min-height: auto;
+  }
+
+  .benefit-card {
+    flex-direction: column;
+    gap: 14px;
+  }
+}

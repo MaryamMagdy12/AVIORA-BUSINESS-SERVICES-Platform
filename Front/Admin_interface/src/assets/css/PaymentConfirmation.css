@@ -1,0 +1,62 @@
+.page-centered {
+	display: grid;
+	grid-template-columns: 88px minmax(0, 1fr);
+	min-height: calc(100vh - 48px);
+	align-items: center;
+	gap: 24px;
+}
+.confirmation-wrapper {
+	justify-self: center;
+	width: min(100%, 520px);
+	padding: 38px;
+	backdrop-filter: blur(10px);
+}
+.confirmation-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.confirmation-container .page-title {
+	text-align: center;
+	font-size: 30px;
+	color: #18455d;
+	margin-bottom: 0;
+}
+.confirmation-container .page-subtitle {
+	text-align: center;
+	color: var(--muted);
+	margin-bottom: 10px;
+}
+.confirmation-container .form-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 18px 22px;
+}
+.confirmation-container .form-row:nth-child(3),
+.confirmation-container .form-row:nth-child(4) {
+	grid-column: 1 / -1;
+}
+.confirmation-container .actions {
+	justify-content: center;
+	gap: 14px;
+}
+.page-card .btn:hover {
+	filter: brightness(1.05);
+}
+
+@media (max-width: 900px) {
+	.page-centered {
+		grid-template-columns: 72px minmax(0, 1fr);
+	}
+	.confirmation-wrapper {
+		width: min(100%, 440px);
+		padding: 30px;
+	}
+	.confirmation-container .form-grid {
+		grid-template-columns: 1fr;
+	}
+	.confirmation-container .form-row:nth-child(3),
+	.confirmation-container .form-row:nth-child(4) {
+		grid-column: auto;
+	}
+}

@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page-transition {
+  width: 100%;
+}
+
+a,
+button,
+.btn,
+input,
+.hero-pill,
+.why-card,
+.service-card-new,
+.cart-service-card,
+.cart-action-card,
+.navbar__link {
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

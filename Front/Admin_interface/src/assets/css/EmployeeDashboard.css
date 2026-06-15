@@ -1,0 +1,17 @@
+.pill {
+	display: inline-block;
+	font-size: 12px;
+	padding: 4px 8px;
+	border-radius: 999px;
+	background: #eef3ff;
+}
+.pill.ok {
+	background: #e6f7f0;
+	color: #0f7b4f;
+}
+.pill.warn {
+	background: #fff3e6;
+	color: #955a0f;
+}
+
+

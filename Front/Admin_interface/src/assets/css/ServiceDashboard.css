@@ -1,0 +1,127 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+.cards {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+.service .muted {
+	color: var(--muted);
+}
+.service h4{
+	color: #19435B;
+	font-weight: 900;
+    font-size: larger;
+	
+}
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 10px 0 14px;
+}
+.tag {
+	background: #eef6f8;
+	border: 1px solid #d8e9ee;
+	border-radius: 999px;
+	padding: 6px 10px;
+	font-size: 12px;
+	display: inline-flex;
+	align-items: center;
+}
+.tag-editable {
+	padding: 0;
+	overflow: visible;
+}
+.tag-content {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 10px;
+}
+.tag-content span {
+	flex: 1;
+}
+.tag-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+	color: var(--muted);
+	transition: color 0.2s;
+	border-radius: 4px;
+}
+.tag-btn:hover {
+	color: var(--brand);
+	background: rgba(25, 67, 91, 0.1);
+}
+.tag-btn-edit {
+	font-size: 11px;
+}
+.tag-btn-delete {
+	font-size: 11px;
+}
+.tag-btn-save {
+	color: #4caf50;
+	font-size: 13px;
+}
+.tag-btn-save:hover {
+	color: #45a049;
+	background: rgba(76, 175, 80, 0.1);
+}
+.tag-btn-cancel {
+	color: #f44336;
+	font-size: 13px;
+}
+.tag-btn-cancel:hover {
+	color: #da190b;
+	background: rgba(244, 67, 54, 0.1);
+}
+.tag-edit-controls {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px;
+}
+.tag-input {
+	background: white;
+	border: 1px solid var(--brand);
+	border-radius: 6px;
+	padding: 4px 8px;
+	font-size: 12px;
+	min-width: 100px;
+	outline: none;
+}
+.tag-input:focus {
+	border-color: var(--brand);
+	box-shadow: 0 0 0 2px rgba(25, 67, 91, 0.1);
+}
+.tag-add {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 10px;
+	background: #f1f6f8;
+	border: 1px dashed #d8e9ee;
+	color: var(--brand);
+	font-size: 14px;
+	transition: all 0.2s;
+}
+.tag-add:hover {
+	background: #e8f2f5;
+	border-color: var(--brand);
+	color: var(--brand);
+}
+.row {
+	display: flex;
+	gap: 8px;
+}
+
+

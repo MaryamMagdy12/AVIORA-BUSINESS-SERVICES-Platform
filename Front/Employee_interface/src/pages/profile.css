@@ -1,0 +1,26 @@
+.emp-profile { display: grid; gap: 20px; }
+
+.card { background: rgba(255,255,255,0.9); border: 1px solid #dbe3ea; border-radius: 18px; padding: 18px; backdrop-filter: blur(6px); }
+.header { background-image: url('/waves.jpg'); background-size: cover; background-position: center; }
+.user { display: flex; gap: 12px; align-items: center; }
+.avatar { width: 56px; height: 56px; border-radius: 50%; }
+.actions { display: flex; gap: 10px; margin: 10px 0; }
+.btn { border: 1px solid #dbe3ea; border-radius: 18px; padding: 8px 12px; background: #fff; }
+.btn.primary { background: #0e4a54; color: #fff; border-color: #0e4a54; }
+.btn.ghost { background: #f7fbfd; }
+
+.grid.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+select { width: 100%; padding: 12px; border: 1px solid #dbe3ea; border-radius: 12px; background: #fff; }
+
+.section-title { text-align: center; margin: 10px 0; color: #0e4a54; }
+.stats { display: grid; gap: 16px; }
+.radial { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ring { width: 220px; height: 220px; border-radius: 50%; background: conic-gradient(#14b8a6 300deg, #0b2a35 300deg); display: grid; place-items: center; }
+.inner { width: 150px; height: 150px; border-radius: 50%; background: #0b2a35; color: #fff; display: grid; place-items: center; font-size: 24px; }
+.label { color: #475569; }
+
+.small-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.mini { display: grid; grid-template-columns: 36px 1fr; align-items: center; gap: 10px; background: #fff; border: 1px solid #dbe3ea; border-radius: 14px; padding: 10px; }
+.dot { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: #0e4a54; color: #fff; }
+
+
